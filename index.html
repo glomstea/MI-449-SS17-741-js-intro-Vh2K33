@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Site</title>
+  <!--At least 3 button elements are included in your page
+      When each of the buttons are hovered over (mouseenter event) or clicked on (click event), a unique sound effect plays from an audio element
+      (try the .play() method) — you may use these drum kit sounds, create ones from this sound effects generator, or use any other sounds that won't hurt/irritate the people who listen to them
+      Each button is well-labeled, corresponding to the sound it will play
+      All audio elements are invisible (no controls attribute), so that they can only be played with the buttons
+      All of your JavaScript is in a separate file ending with .js-->
+</head>
+<body>
+  <header>
+    <h1>Drum Kit Site</h1>
+  </header>
+  <h2>Click or hover on buttons to make sound.</h2>
+  <button type="button" value="Play Sound" onmouseenter="kickFunction()" onclick="kickFunction()">Kick</button>
+  <button type="button" value="Play Sound" onmouseenter="snareFunction()" onclick="snareFunction()">Snare</button>
+  <button type="button" value="Play Sound" onmouseenter="hihatFunction()" onclick="hihatFunction()">hihat</button>
+  <button type="button" value="Play Sound" onmouseenter="rideFunction()" onclick="rideFunction()">Ride</button>
+  <button type="button" value="Play Sound" onmouseenter="tomFunction()" onclick="tomFunction()">Tom</button>
+  <button type="button" value="Play Sound" onmouseenter="clapFunction()" onclick="clapFunction()">Clap</button>
+  <audio id="kick" src="kick.wav" ></audio>
+  <audio id="snare" src="snare.wav" ></audio>
+  <audio id="hihat" src="hihat.wav" ></audio>
+  <audio id="ride" src="ride.wav" ></audio>
+  <audio id="tom" src="tom.wav" ></audio>
+  <audio id="clap" src="clap.wav" ></audio>
+  <script src="script.js"></script>
+</body>
+</html>
